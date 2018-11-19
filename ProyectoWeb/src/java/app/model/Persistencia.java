@@ -16,7 +16,7 @@ public class Persistencia {
     public Persistencia() {
     
       this.user =  "root";
-      this.password = "";
+      this.password = "1234";
       this.host = "localhost";
       this.port = "3306";
       this.db = "citas";

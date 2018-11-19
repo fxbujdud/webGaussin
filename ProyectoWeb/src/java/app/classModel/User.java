@@ -3,16 +3,68 @@ package app.classModel;
 public class User {
     
     private int id;
-    private int mes;
-    private int anno;
-    private int dia;
+    private String correo;
+    private String pass;
     private String nombres;
     private String ap_materno; 
     private String ap_paterno;
-    private String correo;
-    private String pass;
     private String access;
+    private String direccion;
+    private String ciudad;
+    private String estado;
+    private boolean admon;
+    private int preferencias;
     private String active;
+    private int edad;
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public boolean isAdmon() {
+        return admon;
+    }
+
+    public void setAdmon(boolean admon) {
+        this.admon = admon;
+    }
+
+    public int getPreferencias() {
+        return preferencias;
+    }
+
+    public void setPreferencias(int preferencias) {
+        this.preferencias = preferencias;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    
     private int paisId;
 
     public int getId() {
@@ -23,29 +75,10 @@ public class User {
         this.id = id;
     }
 
-    public int getMes() {
-        return mes;
-    }
+  
+   
 
-    public void setMes(int mes) {
-        this.mes = mes;
-    }
-
-    public int getAnno() {
-        return anno;
-    }
-
-    public void setAnno(int anno) {
-        this.anno = anno;
-    }
-
-    public int getDia() {
-        return dia;
-    }
-
-    public void setDia(int dia) {
-        this.dia = dia;
-    }
+   
 
     public String getNombres() {
         return nombres;
@@ -101,14 +134,6 @@ public class User {
 
     public void setActive(String active) {
         this.active = active;
-    }
-
-    public int getPaisId() {
-        return paisId;
-    }
-
-    public void setPaisId(int paisId) {
-        this.paisId = paisId;
     }
             
     
